@@ -1,7 +1,4 @@
-# Decentralized E-Commerce using ETHEReact!
+# Decentralized app and smartcontracts in solidity
 
 # Description
-ETHEReact is a full-stack DApp, showcasing e-commerce capabilities without relying on any traditional database for the backend. Instead, it utilizes the Ethereum Virtual Machine (EVM) as its backbone. While not a product in itself, it serves as an idea for aspiring blockchain enthusiasts to explore the full potential of decentralized applications, from end to end.
-
-    This app utilizes Truffle-powered testrpc (also known as ganache) for local development.
-    Web3 serves as the bridge between Ethereum and ReactJS
+In this repo we are creating dapp using javascript and for backend part we are using solidity. For smart contracts building using solidity on etherum test net

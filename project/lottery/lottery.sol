@@ -20,4 +20,16 @@ contract lottery{
        return  uint(keccak256(abi.encodePacked(block.basefee,block.timestamp, participants.length)));
 
     }
+    function selectWinner() public {
+        require(msg.sender == manager);
+        require(participants.length >=3);
+        uint r= random();
+        address payable winner;
+        uint index = r% participants.length;
+        winner = participants[index];
+        winner.transfer(getBalance());
+         // reset the dyanmic array
+         participants = new address payable[](0);
+
+    }
 }
